@@ -119,5 +119,29 @@
            </div>
           </div>
         </div>
+        <!--CONTACT FORM-->
+        <div class="container">
+            <form>          
+              <label for="title">Title</label>
+              <select id="title" name="title">
+                <option value="select">-select-</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="Dr">Dr</option>
+              </select>
+          
+              <label for="fullname">Name</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Your full name.." minlength="4" size="10" pattern="[a-zA-Z]{4, 100}" required autofocus>
+
+              <label for="email">Email</label>
+              <input id="emailAddress" type="text" placeholder="Your email" required autofocus>
+          
+              <label>Message</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" minlength="20" size="10" pattern="[a-zA-Z]{4, 100}" required></textarea>
+          
+              <input type="submit" value="Submit" data-submit="...Sending">         
+            </form>
+          </div>
     </body>
 </html>
